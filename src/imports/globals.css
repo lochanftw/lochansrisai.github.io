@@ -1,0 +1,79 @@
+* {
+  cursor: none !important;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --sup-bg: #FAFAF7;
+  --sup-black: #111111;
+  --sup-red: #D42B2B;
+  --sup-blue: #1B4FD8;
+  --sup-yellow: #F0C225;
+  --sup-gray: #6B6B6B;
+  --sup-light: #E8E8E0;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--sup-bg);
+  color: var(--sup-black);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset all button styles so browser defaults don't block interactions */
+button {
+  cursor: none !important;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+a {
+  cursor: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove focus outlines (custom cursor provides feedback) */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #D42B2B;
+  outline-offset: 2px;
+}
+
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+::selection {
+  background: #D42B2B;
+  color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAFAF7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D42B2B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+  font-weight: normal;
+}
