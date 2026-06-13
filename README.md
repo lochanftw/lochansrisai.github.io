@@ -1,10 +1,5 @@
 Here is My portfolio :D
 
+https://lochanftw.github.io/lochansrisai.github.io/
 
-
-
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
   
